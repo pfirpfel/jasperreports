@@ -9,7 +9,7 @@
 	<field name="label" class="java.lang.String"/>
 	<field name="pageIndex" class="java.lang.Integer"/>
 	<title>
-		<band height="200" splitType="Stretch">
+		<band height="280" splitType="Stretch">
 			<property name="local_mesure_unitheight" value="pixel"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 			<line>
@@ -31,14 +31,14 @@
 				<textFieldExpression><![CDATA[$P{ReportTitle}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" x="50" y="100" width="455" height="60" isRemoveLineWhenBlank="true" uuid="b8d09c84-640c-4033-9e32-272a25d00715">
+				<reportElement positionType="Float" x="50" y="100" width="455" height="140" isRemoveLineWhenBlank="true" uuid="b8d09c84-640c-4033-9e32-272a25d00715">
 					<property name="local_mesure_unitx" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="local_mesure_unitwidth" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Justified"/>
-				<text><![CDATA[Here is a simple example that shows how to create a table of contents for your report, using JasperReports parts and bookmarked elements in the report.]]></text>
+				<text><![CDATA[Here is a simple example that shows how to create a table of contents for your report, using JasperReports parts and bookmarked elements in the report. Here is a simple example that shows how to create a table of contents for your report, using JasperReports parts and bookmarked elements in the report. Here is a simple example that shows how to create a table of contents for your report, using JasperReports parts and bookmarked elements in the report. Here is a simple example that shows how to create a table of contents for your report, using JasperReports parts and bookmarked elements in the report.]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -59,9 +59,9 @@
 		</band>
 	</pageHeader>
 	<detail>
-		<band height="32" splitType="Stretch">
+		<band height="37" splitType="Stretch">
 			<textField isStretchWithOverflow="true" hyperlinkType="LocalAnchor">
-				<reportElement style="Sans_Bold" positionType="Float" x="50" y="0" width="100" height="15" isRemoveLineWhenBlank="true" uuid="db8b68c6-4430-4199-8967-3ab5c077cb56">
+				<reportElement style="Sans_Bold" positionType="Float" x="50" y="0" width="100" height="20" isRemoveLineWhenBlank="true" uuid="db8b68c6-4430-4199-8967-3ab5c077cb56">
 					<property name="local_mesure_unitx" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<printWhenExpression><![CDATA[$F{level} == 1]]></printWhenExpression>
@@ -70,7 +70,7 @@
 				<hyperlinkAnchorExpression><![CDATA[$F{label}]]></hyperlinkAnchorExpression>
 			</textField>
 			<staticText>
-				<reportElement style="Sans_Bold" positionType="Float" x="150" y="0" width="325" height="15" isRemoveLineWhenBlank="true" uuid="c1b5050c-266f-4e13-a402-a15b50548116">
+				<reportElement style="Sans_Bold" positionType="Float" x="150" y="0" width="325" height="20" isRemoveLineWhenBlank="true" uuid="c1b5050c-266f-4e13-a402-a15b50548116">
 					<property name="local_mesure_unitx" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="local_mesure_unitwidth" value="pixel"/>
@@ -81,7 +81,7 @@
 				<text><![CDATA[___________________________________________________]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" hyperlinkType="LocalAnchor" evaluationTime="Auto">
-				<reportElement style="Sans_Bold" positionType="Float" x="475" y="0" width="30" height="15" isRemoveLineWhenBlank="true" uuid="012b7361-f06b-4539-b299-5a3f0bcbb7b5">
+				<reportElement style="Sans_Bold" positionType="Float" x="475" y="0" width="30" height="20" isRemoveLineWhenBlank="true" uuid="012b7361-f06b-4539-b299-5a3f0bcbb7b5">
 					<property name="local_mesure_unitx" value="pixel"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<printWhenExpression><![CDATA[$F{level} == 1]]></printWhenExpression>
@@ -91,7 +91,7 @@
 				<hyperlinkAnchorExpression><![CDATA[$F{label}]]></hyperlinkAnchorExpression>
 			</textField>
 			<textField isStretchWithOverflow="true" hyperlinkType="LocalAnchor">
-				<reportElement positionType="Float" x="75" y="16" width="100" height="15" isRemoveLineWhenBlank="true" uuid="effe6dfe-dbc8-4451-bf44-a96565a20564">
+				<reportElement positionType="Float" x="75" y="22" width="100" height="15" isRemoveLineWhenBlank="true" uuid="effe6dfe-dbc8-4451-bf44-a96565a20564">
 					<printWhenExpression><![CDATA[$F{level} == 2]]></printWhenExpression>
 				</reportElement>
 				<textFieldExpression><![CDATA[$F{label}]]></textFieldExpression>
@@ -99,14 +99,14 @@
 				<hyperlinkTooltipExpression><![CDATA["View orders from " + $F{label}]]></hyperlinkTooltipExpression>
 			</textField>
 			<staticText>
-				<reportElement positionType="Float" x="175" y="16" width="260" height="15" isRemoveLineWhenBlank="true" uuid="c6cf49ba-d7d0-42fa-9b2c-36ba110e91f4">
+				<reportElement positionType="Float" x="175" y="22" width="200" height="15" isRemoveLineWhenBlank="true" uuid="c6cf49ba-d7d0-42fa-9b2c-36ba110e91f4">
 					<printWhenExpression><![CDATA[$F{level} == 2]]></printWhenExpression>
 				</reportElement>
 				<textElement textAlignment="Center"/>
 				<text><![CDATA[.   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .]]></text>
 			</staticText>
 			<textField isStretchWithOverflow="true" hyperlinkType="LocalAnchor" evaluationTime="Auto">
-				<reportElement positionType="Float" x="435" y="16" width="30" height="15" isRemoveLineWhenBlank="true" uuid="3c835858-cc27-41b1-b820-94b8d9ec0acf">
+				<reportElement positionType="Float" x="375" y="22" width="30" height="15" isRemoveLineWhenBlank="true" uuid="3c835858-cc27-41b1-b820-94b8d9ec0acf">
 					<printWhenExpression><![CDATA[$F{level} == 2]]></printWhenExpression>
 				</reportElement>
 				<textElement textAlignment="Right"/>
